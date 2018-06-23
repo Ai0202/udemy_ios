@@ -1,0 +1,6 @@
+framework module Pods_SwiftMemory {
+  umbrella header "Pods-SwiftMemory-umbrella.h"
+
+  export *
+  module * { export * }
+}

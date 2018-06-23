@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="swiftImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-0E-Qw9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1x6-ZI-6OW">
+                                <rect key="frame" x="143" y="524" width="88" height="62"/>
+                                <state key="normal" title="画像を変更"/>
+                                <connections>
+                                    <action selector="change:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ij1-ti-IHW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1x6-ZI-6OW" secondAttribute="bottom" constant="81" id="Eo0-6n-BiH"/>
+                            <constraint firstItem="UWU-0E-Qw9" firstAttribute="centerX" secondItem="1x6-ZI-6OW" secondAttribute="centerX" id="Kit-7X-eRW"/>
+                            <constraint firstAttribute="trailing" secondItem="UWU-0E-Qw9" secondAttribute="trailing" id="Smq-aY-xo2"/>
+                            <constraint firstItem="UWU-0E-Qw9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="hPa-1D-5CR"/>
+                            <constraint firstItem="UWU-0E-Qw9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="i3n-04-yfw"/>
+                            <constraint firstItem="UWU-0E-Qw9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kZl-xo-645"/>
+                            <constraint firstItem="1x6-ZI-6OW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="504" id="uVa-Nn-mLs"/>
+                            <constraint firstItem="1x6-ZI-6OW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="143" id="vMk-dj-WZS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="backImage" destination="UWU-0E-Qw9" id="iGE-mz-2bc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back1.jpg" width="1280" height="1920"/>
+    </resources>
+</document>
